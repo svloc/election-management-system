@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+:root {
+  --text-color: #183153;
+  --white-color: #fff;
+  --orange-light-color:#bfca02;
+  --font-mulish: "Mulish", sans-serif;
+  --red-color: #11862f;
+  --box-shadow-input: 0 0 0 0.012rem rgb(85 5 127);
+  --btn-black-color: #832561;
+  --box-shadow-input-focus: 0 0 0 0.11rem #832561;
+  --box-shadow-danger-btn-focus: 0 0 0 0.11rem var(--orange-light-color);
+}
+
+*,
+*::before,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-family: var(--font-mulish);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #183153; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.form-input {
+  border-radius: 2px;
+  padding: 0.45em 1em;
+  border: 1px solid transparent;
+  box-shadow: var(--box-shadow-input) !important;
+  transition: all 0.2s ease-out;
+  font-family: var(--font-mulish);
+  width: 100%;
+}
+
+.form-input:focus-visible,
+.form-input:focus {
+  outline: 0;
+  box-shadow: var(--box-shadow-input-focus) !important;
+}
+
+input:-internal-autofill-selected {
+  background-color: var(--white-color) !important;
+}
+
+
+.btn {
+  padding: 0.45rem 1em;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: var(--font-mulish);
+  color: var(--text-color);
+}
+.btn-black {
+  border: 1px solid var(--btn-black-color);
+  color: var(--white-color);
+  background-color: var(--btn-black-color);
+}
+.btn-black:hover {
+  border: 1px solid var(--btn-black-color);
+  background-color: var(--white-color);
+  color: var(--btn-black-color);
+}
+.btn-black:focus {
+  box-shadow: var(--box-shadow-input-focus) !important;
+  border: 1px solid transparent;
+}
+
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
